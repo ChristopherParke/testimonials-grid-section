@@ -1,6 +1,6 @@
 # Testimonials Grid Section
 
-The component is built using React.js and grid css.
+The component is built using React.js and CSS grid.
 
 To view the working example, CLICK HERE: <a href='https://christopherparke.github.io/testimonials-grid-section/' target='_blank'>https://christopherparke.github.io/testimonials-grid-section/</a>
 
