@@ -1,0 +1,53 @@
+@font-face {
+  font-family: barlow;
+  src: url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;500;600&display=swap");
+
+.card_container {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: grid;
+}
+
+body {
+  background-color: #ECF2F8;
+}
+
+
+@media only screen and (min-width: 1440px){
+  .card_container {
+    padding: 5rem;
+    grid:
+    "one one two five" 
+    "three four four five" 
+    / 1fr 1fr 1fr 1fr;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .card_container > * {
+    margin: 1rem;
+  }
+
+  .card_container > :nth-child(1) {
+    grid-area: one;
+  }
+
+  .card_container > :nth-child(2) {
+    grid-area: two;
+  }
+
+  .card_container > :nth-child(3) {
+    grid-area: three;
+  }
+
+  .card_container > :nth-child(4) {
+    grid-area: four;
+  }
+
+  .card_container > :nth-child(5) {
+    grid-area: five;
+  }
+
+}

@@ -1,0 +1,64 @@
+.card {
+  display: grid;
+  width: 80%;
+  max-width: 327px;
+  padding: 1rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 8px;
+  margin: 1rem auto;
+  grid:
+    "gutter profile_icon name name gutter2"
+    "gutter heading heading heading gutter2"
+    "gutter text text text gutter2"
+    / 20px 40px auto auto 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profile_icon {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  margin-right: 15px;
+  grid-area: profile_icon;
+}
+
+.heading {
+  grid-area: heading;
+  padding-right: 0.5rem;
+  font-size: 16pt;
+}
+
+.name {
+  display: grid;
+  font-size: 13pt;
+  grid-area: name;
+  align-self: start;
+  padding-left: 15px;
+}
+
+.title {
+  font-size: 11pt;
+  opacity: 50%;
+}
+
+.text {
+  grid-area: text;
+  font-size: 11pt;
+  opacity: 70%;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    max-width: 100%;
+    width: auto;
+  }
+
+  .heading {
+    font-size: 17pt;
+    margin-bottom: 0;
+  }
+
+}
