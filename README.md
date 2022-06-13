@@ -24,4 +24,4 @@ Your users should be able to:
 
 I tried to make my "Card" component as dynamic as possible. So the card component takes a lot of style custimization as data which is fed through as props.  In this example I simply have an array of objects with the required fields for the given cards.  The idea is that this could scale up to where you are pulling data about the testimonials from an API, and rendering a dynamic list of testimonial cards.
 
-I used grid CSS with media queries to achieve the layout.  Grid was appropriate over flexbox for the reason that grid is two-dimensional while flexbox is one-dimensional.  This made the amount of code required to achieve this layout much quicker and easier write.
+I used CSS grid with media queries to achieve the layout.  Grid was appropriate over flexbox for the reason that grid is two-dimensional while flexbox is one-dimensional.  This made the amount of code required to achieve this layout much quicker and easier write.
